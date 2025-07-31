@@ -1,10 +1,9 @@
 .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    background-color: #eafaf1;
+    padding: 60px 20px 40px;
+    background-color: #eafaf3;
+    font-family: 'Poppins', sans-serif;
+    background-color: #daa74e;
 }
 
 h1{
@@ -14,12 +13,35 @@ font-size: 250%;
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    background: #f2f9f6;
     color: #333;
+}
+
+/* Contenedor principal del blog */
+.blog-content {
+    background: #f2f9f6;
+    min-height: 100vh;
 }
 
 main {
     padding: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.25rem !important;
+    margin: 0 0.25rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .content {
