@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/../../src/components/header/header.css">
     <link rel="stylesheet" href="/../../src/components/footer/footer.css">
     <link rel="stylesheet" href="contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
 
@@ -20,23 +21,44 @@
 </header>
 
     <main>
-        <div class="tituloContacto">
-            <h3>¡Hola! ¿Necesitas contactarnos? Si tienes alguna duda, inquietudo 
-                sugerencia, por favor, completa el siguiente formulario. ¡Estamos listos para escucharte!</h3>
+        <div class="container mt-4 mb-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5 class="Descripcion">¡Hola! ¿Necesitas contactarnos? Si tienes alguna duda, inquietudo 
+                sugerencia, por favor, completa el siguiente formulario. ¡Estamos listos para escucharte!</h5>
+                </div>
+            </div>
         </div>
-        <div class="Contenido-Formulario">
-            <form action="">
-                <label for="NombreApellido">Nombres y apellidos </label>
-                <input type="text" id="NombreApellido" class="form-input" required placeholder="Pepito Perez">
-                <label for="Email">Email</label>
-                <input type="email" id="Email" class="form-input" required placeholder="email@dominio.com">
-                <label for="Telefono"> Telefono</label>
-                <input type="tel" id="Telefono" class="form-input" required placeholder="301 789 99 99">
-                <label for="Mensaje"> Mensaje</label>
-                <textarea cols="70" rows="10" id="mensaje" class="form-input" required></textarea>
-                <label class="checkbox"><input type="checkbox" checked> ¿Quieres recibir las ultimas noveedades?</label>
-                <input class="enviar" type="submit" value="Enviar" >
-            </form>
+
+        <div class="container mt-4-mb-4">
+            <div class="row">
+                <div class="col-6 m-auto">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputText" class="form-label Descripcion">Nombres y apellidos</label>
+                            <input type="text" class="form-control PlaceHolder " required placeholder="Pepito perez" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label  Descripcion">Email </label>
+                            <input type="email" class="form-control PlaceHolder" id="exampleInputEmail1" required placeholder="email@dominio.com" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label Descripcion">Telefono</label>
+                            <input type="text" class="form-control PlaceHolder" id="exampleFormControlInput1" placeholder="(+57) 301 793 54 90">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label Descripcion">Mensaje</label>
+                            <textarea class="form-control PlaceHolder" id="exampleFormControlTextarea1" rows="3" placeholder="Tengo una sugerencia de ..."></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input Descripcion" id="exampleCheck1">
+                            <label class="form-check-label PlaceHolder" for="exampleCheck1">¿ Quieres recibir las ultimas novedades?</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-success mb-5 Descripcion">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -65,6 +87,6 @@
     </div>
 </footer>
 <!-- Fin del Footer -->
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
