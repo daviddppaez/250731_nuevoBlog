@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="/../../src/components/footer/footer.css">
     <link rel="stylesheet" href="./home.css">
     <link rel="icon" href="../../images/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 </head>
 
 <body>
 
 <header>
+
 <h1>Vida Saludable</h1> 
     <nav>
         <a href="/../../src/pages/home/index.html">Inicio</a>
@@ -21,59 +26,85 @@
         <a href="/../../src/pages/contact/contact.html">Contacto</a>
     </nav>
 </header>
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h1 class="display-5 fw-bold">Bienvenido a Vida Fit & Deportes</h1>
+    <p class="lead">Tu sitio de inspiración para una vida activa y saludable</p>
+  </div>
+</section>
 
-    <section class="title">
-    <h1>Bienvenido a Vida Fit & Deportes</h1>
-    <p>Tu sitio de inspiración para una vida activa y saludable</p>
-    </section>
 
-    <main>
-       
-        <section class="content">
-            <div class="text">
-                <h2>El ejercicio transforma tu vida</h2>
-                <p>El deporte no solo mejora tu salud física, también fortalece tu mente. La constancia, el enfoque y la
-                    superación personal son claves para vivir una vida plena y activa.</p>
-            </div>
-            <div class="image">
-                <img src="../../images/mejor-hora-para-hacer-ejercicio-1.jpg" alt="Entrenamiento físico">
-            </div>
-        </section>
+<div id="vidaFitCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
 
-        <section class="content reverse">
-            <div class="image">
-                <img src="../../images/nutricion.jpeg" alt="Alimentación saludable">
-            </div>
-            <div class="text">
-                <h3>Nutrición consciente</h3>
-                <p>Una alimentación balanceada es esencial para alcanzar tus metas deportivas. Los alimentos naturales,
-                    ricos en nutrientes, te proporcionan la energía que necesitas.</p>
-            </div>
-        </section>
+    
+    <div class="carousel-item active">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="fw-bold text-center">El ejercicio transforma tu vida</h2>
+            <p>El deporte no solo mejora tu salud física, también fortalece tu mente. La constancia, el enfoque y la superación personal son claves para vivir una vida plena y activa.</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="../../images/mejor-hora-para-hacer-ejercicio-1.jpg" class="img-fluid rounded shadow" alt="Entrenamiento físico">
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <section class="content">
-            <div class="text">
-                <h4>Cuerpo y mente en armonía</h4>
-                <p>Practicar yoga, meditación o incluso caminar diariamente puede ayudarte a reducir el estrés, aumentar
-                    tu enfoque y mejorar tu calidad de vida.</p>
-            </div>
-            <div class="image">
-                <img src="../../images/cuerpo y  mente.jpg" alt="Meditación">
-            </div>
-        </section>
+   
+    <div class="carousel-item">
+      <div class="container py-5">
+        <div class="row align-items-center flex-md-row-reverse">
+          <div class="col-md-6 text-center">
+            <img src="../../images/nutricion.jpeg" class="img-fluid rounded shadow" alt="Alimentación saludable">
+          </div>
+          <div class="col-md-6">
+            <h3 class="fw-semibold text-center">Nutrición consciente</h3>
+            <p>Una alimentación balanceada es esencial para alcanzar tus metas deportivas. Los alimentos naturales, ricos en nutrientes, te proporcionan la energía que necesitas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-         <section class="content">
-            <div class="text">
-                <h4>Motivación constante</h4>
-                <p>La clave del éxito en un estilo de vida fit es la constancia. Rodéate de personas que te inspiren y
-                    establece metas claras para mantenerte motivado.</p>
-            </div>
-            <div class="image">
-                <img src="../../images/2-1.jpg" alt="Motivación deportiva">
-            </div>
-        </section>
+    <div class="carousel-item">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h4 class="fw-semibold text-center">Cuerpo y mente en armonía</h4>
+            <p>Practicar yoga, meditación o incluso caminar diariamente puede ayudarte a reducir el estrés, aumentar tu enfoque y mejorar tu calidad de vida.</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="../../images/cuerpo y  mente.jpg" class="img-fluid rounded shadow" alt="Meditación">
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </main>
+  
+    <div class="carousel-item">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h4 class="fw-semibold text-center">Motivación constante</h4>
+            <p>La clave del éxito en un estilo de vida fit es la constancia. Rodéate de personas que te inspiren y establece metas claras para mantenerte motivado.</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="../../images/2-1.jpg" class="img-fluid rounded shadow" alt="Motivación deportiva">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#vidaFitCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#vidaFitCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
 
 <!-- Sección del Footer, por David Paez -->
 <footer>
@@ -101,7 +132,7 @@
 </footer>
 <!-- Fin del Footer -->
 
-    <script src="./home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>    
 </body>
-
+ <script src="./home.js"></script>
 </html>
