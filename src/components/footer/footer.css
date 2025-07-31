@@ -1,14 +1,20 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
 * { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
 
 footer {
-    background-color: gainsboro;
+    background: linear-gradient(to bottom, #fff, #ffa726);
     display: block;
     width: 100%;
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     box-sizing: border-box;
+    min-height: 300px;
 }
 
+/* Se elimina "footer .genFootSect", se adaptan propiedades de Bootstrap */
+/*
 footer .genFootSect {
     display: inline-block;
     width: calc(30% - 20px);
@@ -16,20 +22,53 @@ footer .genFootSect {
     padding: 20px;
     vertical-align: top;
 }
+*/
 
-footer h3 { font-size: 16px;}
-footer p { font-size: 14px;}
+footer h3, footer p, footer ul {
+    margin: 0;
+}
+
+footer h3 {
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
 
 footer ul {
-    padding: 0 0 0 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
 }
 
 footer li {
-    list-style: square;
+    list-style: none;
     font-size: 14px;
+    padding: 5px 10px;
+    margin: 0;
 }
 
-footer a {
+footer li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer a, footer p {
     display: block;
-    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+.genContact a {
+    display: inline-block;
+    padding: 0 10px 0 0;
+}
+
+.genContact i {
+
+    font-size: 25px;
 }
