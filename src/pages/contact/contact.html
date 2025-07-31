@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/../../src/components/header/header.css">
+    <link rel="stylesheet" href="/../../src/components/footer/footer.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<header>
+    <h1>Vida Saludable</h1> 
+    <nav>
+        <a href="/../../src/pages/home/index.html">Inicio</a>
+        <a href="/../../src/pages/about/about.html">Quienes somos</a>
+        <a href="/../../src/pages/contact/contact.html">Contacto</a>
+    </nav>
+</header>
+
+    <main>
+        <div class="tituloContacto">
+            <h3>¡Hola! ¿Necesitas contactarnos? Si tienes alguna duda, inquietudo 
+                sugerencia, por favor, completa el siguiente formulario. ¡Estamos listos para escucharte!</h3>
+        </div>
+        <div class="Contenido-Formulario">
+            <form action="">
+                <label for="NombreApellido">Nombres y apellidos </label>
+                <input type="text" id="NombreApellido" class="form-input" required placeholder="Pepito Perez">
+                <label for="Email">Email</label>
+                <input type="email" id="Email" class="form-input" required placeholder="email@dominio.com">
+                <label for="Telefono"> Telefono</label>
+                <input type="tel" id="Telefono" class="form-input" required placeholder="301 789 99 99">
+                <label for="Mensaje"> Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="form-input" required></textarea>
+                <label class="checkbox"><input type="checkbox" checked> ¿Quieres recibir las ultimas noveedades?</label>
+                <input class="enviar" type="submit" value="Enviar" >
+            </form>
+        </div>
+    </main>
+
+<!-- Sección del Footer, por David Paez -->
+<footer>
+    <div class="genFootSect">
+        <h3>Vida Saludable</h3>
+        <p>Blog de vida saludable</p>
+    </div>
+    <div class="genFootSect">
+        <h3>Autores</h3>
+        <ul>
+            <li>Edson Garcia</li>
+            <li>David Paez</li>
+            <li>Jaider Montaña</li>
+            <li>Angel Pimienta</li>
+        </ul>
+    </div>
+    <div class="genFootSect">
+        <h3>Correo de contacto</h3>
+        <a href="#">contacto@vidasaludable.com</a>
+        <br>
+        <h3>Redes sociales</h3>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+    </div>
+</footer>
+<!-- Fin del Footer -->
+    
+</body>
+</html>
