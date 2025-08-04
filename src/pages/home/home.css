@@ -2,19 +2,16 @@
 
 .title {
     text-align: center;
-<<<<<<< HEAD
     background-color: #eafaf1;
     font-family: 'Arvo', serif;
-=======
     padding: 60px 20px 40px;
     background-color: #eafaf3;
     font-family: 'Poppins', sans-serif;
     background-color: #daa74e;
->>>>>>> Yohana
 }
 
 h1{
-font-size: 250%;
+    font-size: 250%;
 }
 
 body {
